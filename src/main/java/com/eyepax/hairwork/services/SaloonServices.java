@@ -1,6 +1,11 @@
 package com.eyepax.hairwork.services;
 
+import com.eyepax.hairwork.model.SaloonModel;
+
+import java.util.List;
+
 public interface SaloonServices {
 
-    String findAllSaloons();
+    List<SaloonModel> findAllSaloons();
+    String  saveSaloon(SaloonModel saloondata);
 }
