@@ -27,4 +27,16 @@ public class SaloonServiceImpl implements SaloonServices {
         saloonRepository.save(saloondata);
         return "data saved";
     }
+
+   @Override
+    public String updateSalon(SaloonModel updateSaloondata) {
+            String msg = null;
+            if(updateSaloondata.getId() != null){
+                saloonRepository.save(updateSaloondata);
+                msg = "data is updated";
+            }else {
+                msg = "Error";
+            }
+        return msg;
+     }
 }
