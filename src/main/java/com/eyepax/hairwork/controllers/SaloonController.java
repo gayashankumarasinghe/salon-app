@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController //let spring boot to kniw that this is rest api based
+@RestController //let spring boot to know that this is rest api based
 @RequestMapping("/saloon") // to add end point
 public class SaloonController {
 
@@ -20,7 +20,7 @@ public class SaloonController {
         return saloonServices.findAllSaloons();
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public String addSaloon(@RequestBody SaloonModel saloondata){
         return saloonServices.saveSaloon(saloondata);
     }

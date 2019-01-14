@@ -24,8 +24,8 @@ public class SaloonModel {
     private  String website;
     @Column(name = "Facebook")
     private String facebook;
-    @Column(name = "RegisteredDate")
-    private Date registered_date;
+    //@Column(name = "RegisteredDate")
+    //private Date registered_date;
     @Column(name = "PostalCode")
     private  Integer postal_code;
     @Column(name = "Email")
@@ -103,13 +103,13 @@ public class SaloonModel {
         this.facebook = facebook;
     }
 
-    public Date getRegistered_date() {
-        return registered_date;
-    }
-
-    public void setRegistered_date(Date registered_date) {
-        this.registered_date = registered_date;
-    }
+//    public Date getRegistered_date() {
+//        return registered_date;
+//    }
+//
+//    public void setRegistered_date(Date registered_date) {
+//        this.registered_date = registered_date;
+//    }
 
     public Integer getPostal_code() {
         return postal_code;
