@@ -25,4 +25,10 @@ public class SaloonController {
         return saloonServices.saveSaloon(saloondata);
     }
 
+
+    @PutMapping("/update")
+    public String updateSalon(@RequestBody SaloonModel updateSaloondata){
+        return  saloonServices.updateSalon(updateSaloondata);
+    }
+
 }

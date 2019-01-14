@@ -8,4 +8,6 @@ public interface SaloonServices {
 
     List<SaloonModel> findAllSaloons();
     String  saveSaloon(SaloonModel saloondata);
+
+    String updateSalon(SaloonModel updateSaloondata);
 }
