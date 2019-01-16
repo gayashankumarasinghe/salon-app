@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Authentication" />
+        <module name="Salon-Stylist" />
+        <module name="Solon-Stylist" />
       </profile>
     </annotationProcessing>
   </component>

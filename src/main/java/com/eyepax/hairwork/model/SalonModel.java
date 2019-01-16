@@ -3,13 +3,13 @@ package com.eyepax.hairwork.model;
 import javax.persistence.*;
 import java.util.Date;
 @Entity
-@Table(name ="Saloon")
-public class SaloonModel {
+@Table(name ="Salon")
+public class SalonModel {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "saloon_id")
-    private Integer id; //saloon id
+    @Column(name = "salon_id")
+    private Integer id; //salon id
     @Column(name = "Name")
     private  String name;
     @Column(name = "Country")
