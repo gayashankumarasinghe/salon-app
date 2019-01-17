@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class SalonServiceImpl implements SalonServices {
@@ -15,29 +16,23 @@ public class SalonServiceImpl implements SalonServices {
 
     @Override
     public List<SalonModel> findAllSalons() {
-        //logic of search all salons and return
-        List<SalonModel> allSalons = salonRepository.findAll();
-       // return "Search in db";
-        return  allSalons;
+        return salonRepository.findAll();
     }
 
     @Override
-    public String saveSalon(SalonModel salondata) {
-        salonRepository.save(salondata);
-        return "data saved";
+    public SalonModel saveSalon(SalonModel salonData) {
+        return salonRepository.save(salonData);
     }
 
-   @Override
-    public String updateSalon(SalonModel updateSalondata) {
-            String msg = null;
-            if(updateSalondata.getId() != null){
-                salonRepository.save(updateSalondata);
-                msg = "data is updated";
-            }else {
-                msg = "Error";
-            }
-        return msg;
-     }
+    @Override
+    public Optional<SalonModel> findById(Integer id) {
+        return salonRepository.findById(id);
+    }
+
+    @Override
+    public void delete(SalonModel salonModel) {
+        salonRepository.delete(salonModel);
+    }
 
     @Autowired
     public void setSalonRepositary(SalonRepository salonRepositary) {

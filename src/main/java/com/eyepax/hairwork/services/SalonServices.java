@@ -3,11 +3,14 @@ package com.eyepax.hairwork.services;
 import com.eyepax.hairwork.model.SalonModel;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface SalonServices {
 
     List<SalonModel> findAllSalons();
-    String  saveSalon(SalonModel salondata);
+    SalonModel  saveSalon(SalonModel salonData);
 
-    String updateSalon(SalonModel updateSalondata);
+    void delete(SalonModel salonModel);
+
+    Optional<SalonModel> findById(Integer id);
 }
