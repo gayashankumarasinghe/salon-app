@@ -31,6 +31,19 @@ public class SalonModel {
     @Column(name = "Email")
     private String email;
 
+    public SalonModel(Integer id, String name, String country, Integer city_id, String description, String street_address, String website, String facebook, Integer postal_code, String email) {
+        this.id = id;
+        this.name = name;
+        this.country = country;
+        this.city_id = city_id;
+        this.description = description;
+        this.street_address = street_address;
+        this.website = website;
+        this.facebook = facebook;
+        this.postal_code = postal_code;
+        this.email = email;
+    }
+
     public String getEmail() {
         return email;
     }
