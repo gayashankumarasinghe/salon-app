@@ -27,7 +27,7 @@ public class SalonController {
     }
 
 
-    @PutMapping("/{salonId")
+    @PutMapping("/{salonId}")
     public SalonModel updateSalon(@PathVariable Integer salonId, @RequestBody SalonModel salonModel) {
         Optional<SalonModel> existingSalonModel = salonServices.findById(salonId);
         if(existingSalonModel.isPresent()) {

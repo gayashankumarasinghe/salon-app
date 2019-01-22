@@ -30,7 +30,7 @@ public class SalonModel {
     private  Integer postal_code;
     @Column(name = "Email")
     private String email;
-
+//removed the integer Integer id,
     public SalonModel(Integer id, String name, String country, Integer city_id, String description, String street_address, String website, String facebook, Integer postal_code, String email) {
         this.id = id;
         this.name = name;
@@ -42,6 +42,9 @@ public class SalonModel {
         this.facebook = facebook;
         this.postal_code = postal_code;
         this.email = email;
+    }
+
+    public SalonModel() {
     }
 
     public String getEmail() {
