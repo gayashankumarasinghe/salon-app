@@ -45,4 +45,14 @@ public class StylistServiceImpl implements StylistServices {
         return stylistRepository.findBySkills(skill);
 
     }
+
+    @Override
+    public Optional<Iterable<StylistModel>> findAllByRate(String rate) {
+        return stylistRepository.findByRate(rate);
+    }
+
+    @Override
+    public Optional<Iterable<StylistModel>> findAllByCity(String city) {
+        return stylistRepository.findByCity(city);
+    }
 }

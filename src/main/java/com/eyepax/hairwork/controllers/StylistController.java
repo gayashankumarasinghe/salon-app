@@ -42,6 +42,26 @@ public class StylistController {
         return null;
     }
 
+    @GetMapping("/findByRate/{rate}")
+    public Iterable<StylistModel> findStylistByRate(@PathVariable String rate){
+        Optional<Iterable<StylistModel>> stylist = stylistServices.findAllByRate(rate);
+        if(stylist.isPresent()) {
+            return stylist.get();
+        }
+
+        return null;
+    }
+
+    @GetMapping("/findByCity/{city}")
+    public Iterable<StylistModel> findStylistByCity(@PathVariable String city){
+        Optional<Iterable<StylistModel>> stylist = stylistServices.findAllByCity(city);
+        if(stylist.isPresent()) {
+            return stylist.get();
+        }
+
+        return null;
+    }
+
     @GetMapping("/find/{id}")
     public StylistModel findStylistById(@PathVariable Integer id){
         Optional<StylistModel> stylist = stylistServices.findById(id);

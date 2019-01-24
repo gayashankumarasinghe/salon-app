@@ -17,4 +17,8 @@ public interface StylistServices {
     void delete(StylistModel stylistModel);
 
     Optional<Iterable<StylistModel>> findAllBySkill(String skill);
+
+    Optional<Iterable<StylistModel>> findAllByRate(String rate);
+
+    Optional<Iterable<StylistModel>> findAllByCity(String city);
 }

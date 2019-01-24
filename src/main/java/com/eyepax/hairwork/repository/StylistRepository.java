@@ -7,4 +7,8 @@ import java.util.Optional;
 
 public interface StylistRepository extends JpaRepository<StylistModel,Integer> {
     Optional<Iterable<StylistModel>> findBySkills(String skill);
+
+    Optional<Iterable<StylistModel>> findByRate(String rate);
+
+    Optional<Iterable<StylistModel>> findByCity(String city);
 }
