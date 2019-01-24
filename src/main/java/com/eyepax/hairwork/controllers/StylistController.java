@@ -2,6 +2,7 @@ package com.eyepax.hairwork.controllers;
 
 
 import com.eyepax.hairwork.model.SalonModel;
+import com.eyepax.hairwork.model.SearchToken;
 import com.eyepax.hairwork.model.StylistModel;
 import com.eyepax.hairwork.services.StylistServices;
 import org.springframework.beans.BeanUtils;
@@ -32,18 +33,19 @@ public class StylistController {
         return null;
     }
 
-    @GetMapping("/findBySkills/{skill}")
-    public Iterable<StylistModel> findStylistBySkill(@PathVariable String skill){
+//    @PostMapping("/findBySkills/{skill}")
+    public Iterable<StylistModel> findStylistBySkill(String skill){
         Optional<Iterable<StylistModel>> stylist = stylistServices.findAllBySkill(skill);
         if(stylist.isPresent()) {
+        	System.out.println(stylist.get());
             return stylist.get();
         }
 
         return null;
     }
 
-    @GetMapping("/findByRate/{rate}")
-    public Iterable<StylistModel> findStylistByRate(@PathVariable String rate){
+//    @GetMapping("/findByRate/{rate}")
+    public Iterable<StylistModel> findStylistByRate(String rate){
         Optional<Iterable<StylistModel>> stylist = stylistServices.findAllByRate(rate);
         if(stylist.isPresent()) {
             return stylist.get();
@@ -52,8 +54,35 @@ public class StylistController {
         return null;
     }
 
-    @GetMapping("/findByCity/{city}")
-    public Iterable<StylistModel> findStylistByCity(@PathVariable String city){
+//    @GetMapping("/findByCity/{city}")
+    public Iterable<StylistModel> findStylistByCityAndRate(String city, String rate){
+        Optional<Iterable<StylistModel>> stylist = stylistServices.findByCityAndRate(city, rate);
+        if(stylist.isPresent()) {
+            return stylist.get();
+        }
+
+        return null;
+    }
+    
+    public Iterable<StylistModel> findStylistByCityAndSkills(String city, String skill){
+        Optional<Iterable<StylistModel>> stylist = stylistServices.findByCityAndSkills(city, skill);
+        if(stylist.isPresent()) {
+            return stylist.get();
+        }
+
+        return null;
+    }
+    
+    public Iterable<StylistModel> findStylistBySkillsAndRate(String skill, String rate){
+        Optional<Iterable<StylistModel>> stylist = stylistServices.findBySkillsAndRate(skill, rate);
+        if(stylist.isPresent()) {
+            return stylist.get();
+        }
+
+        return null;
+    }
+    
+    public Iterable<StylistModel> findStylistByCity(String city){
         Optional<Iterable<StylistModel>> stylist = stylistServices.findAllByCity(city);
         if(stylist.isPresent()) {
             return stylist.get();
@@ -74,6 +103,39 @@ public class StylistController {
     @PostMapping("/add")
     public StylistModel addStylist(@RequestBody StylistModel stylistdata){
         return stylistServices.saveStylist(stylistdata);
+    }
+    
+    @PostMapping("/search")
+    @ResponseBody
+    public Iterable<StylistModel> findAllBySkillAndRateAndCity(@RequestBody SearchToken token ) {
+    	if(token.skills==null || token.rate==null || token.city==null) {
+    		if(token.city==null && token.rate==null) {
+    			return this.findStylistBySkill(token.skills);
+    		}
+    		if(token.city==null && token.skills == null ) {
+    			return this.findStylistByRate(token.rate);
+    		}
+    		if(token.rate==null && token.skills == null ) {
+    			return this.findStylistByCity(token.city);
+    		}
+    		if(token.rate==null) {	
+    			return findStylistByCityAndSkills(token.city, token.skills);
+        	}
+        	if(token.city==null) {	
+        		return findStylistBySkillsAndRate(token.skills, token.rate);
+        	}
+        	if(token.skills==null) {
+        		return findStylistByCityAndRate(token.city, token.rate);
+    		}
+    	}
+    	
+    	Optional<Iterable<StylistModel>> stylist = stylistServices.findBySkillsAndRateAndCity(token.skills, token.rate, token.city);
+    	if(stylist.isPresent()) {
+    		System.out.println(stylist.get());
+            return stylist.get();
+        }
+
+        return null;
     }
 
     @Autowired

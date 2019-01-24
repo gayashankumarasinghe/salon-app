@@ -17,7 +17,7 @@ public class StylistServiceImpl implements StylistServices {
 
     @Override
     public List<StylistModel> findAllStylists() {
-        return stylistRepository.findAll();
+        return (List<StylistModel>) stylistRepository.findAll();
     }
 
     @Override
@@ -55,4 +55,24 @@ public class StylistServiceImpl implements StylistServices {
     public Optional<Iterable<StylistModel>> findAllByCity(String city) {
         return stylistRepository.findByCity(city);
     }
+
+	@Override
+	public Optional<Iterable<StylistModel>> findBySkillsAndRateAndCity(String skill, String rate, String city) {
+		return stylistRepository.findBySkillsAndRateAndCity(skill, rate, city);
+	}
+
+	@Override
+	public Optional<Iterable<StylistModel>> findByCityAndRate(String city, String rate) {
+		return stylistRepository.findByCityAndRate(city, rate);
+	}
+
+	@Override
+	public Optional<Iterable<StylistModel>> findByCityAndSkills(String city, String skill) {
+		return stylistRepository.findByCityAndSkills(city, skill);
+	}
+
+	@Override
+	public Optional<Iterable<StylistModel>> findBySkillsAndRate(String skill, String rate) {
+		return stylistRepository.findBySkillsAndRate(skill, rate);
+	}
 }

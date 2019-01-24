@@ -21,4 +21,12 @@ public interface StylistServices {
     Optional<Iterable<StylistModel>> findAllByRate(String rate);
 
     Optional<Iterable<StylistModel>> findAllByCity(String city);
+    
+    Optional<Iterable<StylistModel>> findByCityAndRate(String city, String rate);
+    
+    Optional<Iterable<StylistModel>> findByCityAndSkills(String city, String skill);
+    
+    Optional<Iterable<StylistModel>> findBySkillsAndRate(String skill, String rate);
+    
+    Optional<Iterable<StylistModel>> findBySkillsAndRateAndCity(String skills, String rate, String city);
 }
