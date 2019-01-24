@@ -8,9 +8,17 @@ import java.util.Optional;
 
 public interface StylistServices {
 
-    List<SalonModel> findAllStylists();
+    List<StylistModel> findAllStylists();
 
     StylistModel saveStylist(StylistModel stylistData);
 
     Optional <StylistModel> findById(Integer id);
+
+    void delete(StylistModel stylistModel);
+
+    Optional<Iterable<StylistModel>> findAllBySkill(String skill);
+
+    Optional<Iterable<StylistModel>> findAllByRate(String rate);
+
+    Optional<Iterable<StylistModel>> findAllByCity(String city);
 }

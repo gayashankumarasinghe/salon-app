@@ -46,7 +46,7 @@ public class SalonController {
         return null;
     }
 
-@DeleteMapping("/{salonId}")
+@DeleteMapping("/delete/{salonId}")
 public void delete(Integer salonId) {
     Optional<SalonModel> existingSalonModel = salonServices.findById(salonId);
     if(existingSalonModel.isPresent()) {
