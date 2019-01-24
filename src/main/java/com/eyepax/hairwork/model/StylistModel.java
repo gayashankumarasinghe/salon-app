@@ -1,5 +1,7 @@
 package com.eyepax.hairwork.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 @Entity
@@ -46,6 +48,10 @@ public class StylistModel {
         this.description = description;
         this.street_address = street_address;
         this.facebook = facebook;
+    }
+
+    public StylistModel(String skills) {
+        this.skills = skills;
     }
 
     public void setName(String name) {

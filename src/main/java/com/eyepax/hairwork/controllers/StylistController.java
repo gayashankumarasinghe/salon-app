@@ -32,6 +32,16 @@ public class StylistController {
         return null;
     }
 
+    @GetMapping("/findBySkills/{skill}")
+    public Iterable<StylistModel> findStylistBySkill(@PathVariable String skill){
+        Optional<Iterable<StylistModel>> stylist = stylistServices.findAllBySkill(skill);
+        if(stylist.isPresent()) {
+            return stylist.get();
+        }
+
+        return null;
+    }
+
     @GetMapping("/find/{id}")
     public StylistModel findStylistById(@PathVariable Integer id){
         Optional<StylistModel> stylist = stylistServices.findById(id);

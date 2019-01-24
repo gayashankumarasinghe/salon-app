@@ -7,6 +7,7 @@ import com.eyepax.hairwork.services.StylistServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -39,4 +40,9 @@ public class StylistServiceImpl implements StylistServices {
         this.stylistRepository = stylistRepository;
     }
 
+    @Override
+    public Optional<Iterable<StylistModel>> findAllBySkill(String skill) {
+        return stylistRepository.findBySkills(skill);
+
+    }
 }
