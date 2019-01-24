@@ -12,10 +12,14 @@ public class StylistModel {
     private Integer id; //salon id
     @Column(name = "Name")
     private  String name;
-    @Column(name = "Country")
-    private String country;
-    @Column(name = "City_id")
-    private  Integer city_id;
+    @Column(name = "Skills")
+    private String skills;
+    @Column(name = "City")
+    private  String city;
+    @Column(name = "Rate")
+    private  String rate;
+    @Column(name = "Email")
+    private String email;
     @Column(name = "Description")
     private  String description;
     @Column(name = "StreetAddress")
@@ -26,8 +30,93 @@ public class StylistModel {
     private String facebook;
     //@Column(name = "RegisteredDate")
     //private Date registered_date;
-    @Column(name = "PostalCode")
-    private  Integer postal_code;
-    @Column(name = "Email")
-    private String email;
+//    @Column(name = "PostalCode")
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public StylistModel(Integer id, String name, String skills, String city, String rate, String email, String description, String street_address, String facebook) {
+        this.id = id;
+        this.name = name;
+        this.skills = skills;
+        this.city = city;
+        this.rate = rate;
+        this.email = email;
+        this.description = description;
+        this.street_address = street_address;
+        this.facebook = facebook;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSkills(String skills) {
+        this.skills = skills;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setRate(String rate) {
+        this.rate = rate;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setStreet_address(String street_address) {
+        this.street_address = street_address;
+    }
+
+    public void setFacebook(String facebook) {
+        this.facebook = facebook;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSkills() {
+        return skills;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getRate() {
+        return rate;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getStreet_address() {
+        return street_address;
+    }
+
+    public String getFacebook() {
+        return facebook;
+    }
+//    private  Integer postal_code;
+
+    public StylistModel() {
+    }
 }

@@ -5,10 +5,12 @@ import com.eyepax.hairwork.model.StylistModel;
 import com.eyepax.hairwork.repository.StylistRepository;
 import com.eyepax.hairwork.services.StylistServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class StylistServiceImpl implements StylistServices {
     private StylistRepository stylistRepository;
 
@@ -33,8 +35,8 @@ public class StylistServiceImpl implements StylistServices {
     }
 
     @Autowired
-    public void setStylistRepositary(StylistRepository stylistRepositary) {
-        this.stylistRepository = stylistRepositary;
+    public void setStylistRepositary(StylistRepository stylistRepository) {
+        this.stylistRepository = stylistRepository;
     }
 
 }

@@ -5,6 +5,7 @@ import com.eyepax.hairwork.model.SalonModel;
 import com.eyepax.hairwork.model.StylistModel;
 import com.eyepax.hairwork.services.StylistServices;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -29,5 +30,24 @@ public class StylistController {
             return stylistServices.saveStylist(existingStylistModel.get());
         }
         return null;
+    }
+
+    @GetMapping("/find/{id}")
+    public StylistModel findStylistById(@PathVariable Integer id){
+        Optional<StylistModel> stylist = stylistServices.findById(id);
+        if(stylist.isPresent()) {
+            return stylist.get();
+        }
+        return null;
+    }
+
+    @PostMapping("/add")
+    public StylistModel addStylist(@RequestBody StylistModel stylistdata){
+        return stylistServices.saveStylist(stylistdata);
+    }
+
+    @Autowired
+    public void setStylistServices(StylistServices stylistService) {
+        this.stylistServices = stylistService;
     }
 }
