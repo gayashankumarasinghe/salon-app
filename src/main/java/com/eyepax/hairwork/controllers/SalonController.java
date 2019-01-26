@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController //let spring boot to know that this is rest api based
-@RequestMapping("/salon") // to add end point
+@RequestMapping("salon") // to add end point
 public class SalonController {
 
     private SalonServices salonServices;

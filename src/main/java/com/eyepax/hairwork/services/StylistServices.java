@@ -12,6 +12,8 @@ public interface StylistServices {
 
     StylistModel saveStylist(StylistModel stylistData);
 
+    List<StylistModel> saveStylists(List<StylistModel> stylistData);
+
     Optional <StylistModel> findById(Integer id);
 
     void delete(StylistModel stylistModel);

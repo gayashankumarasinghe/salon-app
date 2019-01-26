@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/stylist")
+@RequestMapping("stylist")
 public class StylistController {
     private StylistServices stylistServices;
 
@@ -91,6 +91,15 @@ public class StylistController {
         return null;
     }
 
+//    public Iterable<StylistModel> findStylistByBookingDates(String date){
+//        Optional<Iterable<StylistModel>> stylist = stylistServices.findAllByCity(city);
+//        if(stylist.isPresent()) {
+//            return stylist.get();
+//        }
+//
+//        return null;
+//    }
+
     @GetMapping("/find/{id}")
     public StylistModel findStylistById(@PathVariable Integer id){
         Optional<StylistModel> stylist = stylistServices.findById(id);
@@ -101,8 +110,8 @@ public class StylistController {
     }
 
     @PostMapping("/add")
-    public StylistModel addStylist(@RequestBody StylistModel stylistdata){
-        return stylistServices.saveStylist(stylistdata);
+    public List<StylistModel> addStylist(@RequestBody List<StylistModel> stylistdata){
+        return stylistServices.saveStylists(stylistdata);
     }
     
     @PostMapping("/search")

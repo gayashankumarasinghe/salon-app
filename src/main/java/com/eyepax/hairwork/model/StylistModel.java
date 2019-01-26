@@ -3,6 +3,7 @@ package com.eyepax.hairwork.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name ="Stylist")
@@ -30,15 +31,15 @@ public class StylistModel {
 //    private  String website;
     @Column(name = "Facebook")
     private String facebook;
-    //@Column(name = "RegisteredDate")
-    //private Date registered_date;
+    @Column(name = "BookingDates")
+    private String[] booking_dates;
 //    @Column(name = "PostalCode")
 
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public StylistModel(Integer id, String name, String skills, String city, String rate, String email, String description, String street_address, String facebook) {
+    public StylistModel(Integer id, String name, String skills, String city, String rate, String email, String description, String street_address, String facebook, String[] booking_dates) {
         this.id = id;
         this.name = name;
         this.skills = skills;
@@ -48,6 +49,15 @@ public class StylistModel {
         this.description = description;
         this.street_address = street_address;
         this.facebook = facebook;
+        this.booking_dates = booking_dates;
+    }
+
+    public String[] getBooking_dates() {
+        return booking_dates;
+    }
+
+    public void setBooking_dates(String[] booking_dates) {
+        this.booking_dates = booking_dates;
     }
 
     public StylistModel(String skills) {

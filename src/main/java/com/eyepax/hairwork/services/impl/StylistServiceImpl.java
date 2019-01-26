@@ -16,6 +16,11 @@ public class StylistServiceImpl implements StylistServices {
     private StylistRepository stylistRepository;
 
     @Override
+    public List<StylistModel> saveStylists(List<StylistModel> stylistData) {
+        return (List<StylistModel>) stylistRepository.saveAll(stylistData);
+    }
+
+    @Override
     public List<StylistModel> findAllStylists() {
         return (List<StylistModel>) stylistRepository.findAll();
     }
