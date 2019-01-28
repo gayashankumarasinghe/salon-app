@@ -16,6 +16,11 @@ public class StylistServiceImpl implements StylistServices {
     private StylistRepository stylistRepository;
 
     @Override
+    public Optional<StylistModel> findStylistByEmail(String email) {
+        return stylistRepository.findByEmail(email);
+    }
+
+    @Override
     public List<StylistModel> saveStylists(List<StylistModel> stylistData) {
         return (List<StylistModel>) stylistRepository.saveAll(stylistData);
     }

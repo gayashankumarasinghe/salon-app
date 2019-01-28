@@ -20,4 +20,5 @@ public interface StylistRepository extends JpaRepository<StylistModel,Integer> {
     
     Optional<Iterable<StylistModel>> findBySkillsAndRateAndCity(String skills, String rate, String city);
 
+    Optional<StylistModel> findByEmail(String email);
 }

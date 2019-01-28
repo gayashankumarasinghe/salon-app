@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="994e94ca-e3e1-44b9-84c0-6f5cc449b350" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com.eyepax.hairwork/Authentication/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com.eyepax.hairwork/Authentication/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/SalonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/SalonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/StylistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/StylistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/StylistModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/StylistModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/SalonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/SalonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/StylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/StylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/SalonServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/SalonServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/StylistServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/StylistServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/SalonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/SalonServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/StylistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/StylistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.eyepax.hairwork/Authentication/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.eyepax.hairwork/Authentication/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/controllers/SalonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/controllers/SalonController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/controllers/StylistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/controllers/StylistController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/model/SalonModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/model/SalonModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/model/SearchToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/model/SearchToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/model/StylistModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/model/StylistModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/repository/SalonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/repository/SalonRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/repository/StylistRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/repository/StylistRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/services/SalonServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eyepax/hairwork/services/SalonServices.class" afterDir="false" />
@@ -34,78 +32,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/SalonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.3.RELEASE/spring-data-jpa-2.1.3.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/StylistController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="140" column="14" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/SalonModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="5" selection-start-line="4" selection-end-line="5" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/StylistServices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/StylistServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/StylistRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="343">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,37 +46,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/StylistModel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/SalonModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="119">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1589#1590#0" expanded="true" />
-                <element signature="e#1625#1626#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
-                <element signature="e#1735#1736#0" expanded="true" />
-                <element signature="e#1502#1503#0" expanded="true" />
-                <element signature="e#1538#1539#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="17" selection-end-line="32" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" selection-start-line="52" selection-start-column="7" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -184,18 +92,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/SaloonServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/SaloonModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/SaloonServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/SalonServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/SalonServiceImpl.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/StylistModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/SalonModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/SalonServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/SalonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/SalonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/StylistController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/StylistServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/StylistServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/SalonController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/StylistModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/StylistController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/StylistRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/SalonModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/SalonRepository.java" />
       </list>
     </option>
   </component>
@@ -222,100 +131,13 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hairwork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hairwork" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hairwork" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hairwork" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hairwork" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hairwork" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SalonApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salon-app" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548462903978" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548634268940" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Salon-Booking" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -336,7 +158,7 @@
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eyepax.hairwork.Application" />
-      <module name="Salon-Stylist" />
+      <module name="Authentication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.eyepax.hairwork.*" />
@@ -377,9 +199,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31467474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20801815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -388,12 +209,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3617021" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36006546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.77982646" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3449024" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34369886" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.34697217" />
@@ -435,20 +256,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/SalonServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/SalonServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -460,23 +267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/SalonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.3.RELEASE/spring-data-jpa-2.1.3.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
@@ -494,47 +284,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/SalonController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.3.RELEASE/spring-data-jpa-2.1.3.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="282">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/StylistServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/StylistServices.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/impl/SalonServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="136">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/SalonServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/StylistRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="309">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/SalonModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/repository/SalonRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="5" selection-start-line="4" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -543,8 +343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/StylistController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="140" column="14" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
+        <state relative-caret-position="190">
+          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -553,16 +353,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/StylistModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        <state relative-caret-position="272">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1589#1590#0" expanded="true" />
             <element signature="e#1625#1626#0" expanded="true" />
             <element signature="e#1685#1686#0" expanded="true" />
             <element signature="e#1735#1736#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/services/StylistServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/controllers/SalonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eyepax/hairwork/model/SalonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

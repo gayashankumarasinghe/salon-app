@@ -13,4 +13,6 @@ public interface SalonServices {
     void delete(SalonModel salonModel);
 
     Optional<SalonModel> findById(Integer id);
+
+    Optional<SalonModel> findSalonByEmail(String email);
 }

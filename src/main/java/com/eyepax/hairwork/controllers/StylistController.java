@@ -33,6 +33,18 @@ public class StylistController {
         return null;
     }
 
+    @PostMapping("/stylist-details")
+    @ResponseBody
+    public StylistModel findStylistByEmail(@RequestBody String email){
+        Optional<StylistModel> stylist = stylistServices.findStylistByEmail(email);
+        if(stylist.isPresent()) {
+            System.out.println(stylist.get());
+            return stylist.get();
+        }
+
+        return null;
+    }
+
 //    @PostMapping("/findBySkills/{skill}")
     public Iterable<StylistModel> findStylistBySkill(String skill){
         Optional<Iterable<StylistModel>> stylist = stylistServices.findAllBySkill(skill);

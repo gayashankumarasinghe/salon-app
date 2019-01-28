@@ -26,6 +26,18 @@ public class SalonController {
         return salonServices.saveSalon(salondata);
     }
 
+    @PostMapping("/salon-details")
+    @ResponseBody
+    public SalonModel findSalonByEmail(@RequestBody String email){
+        Optional<SalonModel> salon = salonServices.findSalonByEmail(email);
+        if(salon.isPresent()) {
+            System.out.println(salon.get());
+            return salon.get();
+        }
+
+        return null;
+    }
+
 
     @PutMapping("/{salonId}")
     public SalonModel updateSalon(@PathVariable Integer salonId, @RequestBody SalonModel salonModel) {

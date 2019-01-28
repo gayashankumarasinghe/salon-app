@@ -31,4 +31,6 @@ public interface StylistServices {
     Optional<Iterable<StylistModel>> findBySkillsAndRate(String skill, String rate);
     
     Optional<Iterable<StylistModel>> findBySkillsAndRateAndCity(String skills, String rate, String city);
+
+    Optional<StylistModel> findStylistByEmail(String email);
 }

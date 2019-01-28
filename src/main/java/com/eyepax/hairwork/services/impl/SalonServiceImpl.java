@@ -11,6 +11,10 @@ import java.util.Optional;
 
 @Service
 public class SalonServiceImpl implements SalonServices {
+    @Override
+    public Optional<SalonModel> findSalonByEmail(String email) {
+        return salonRepository.findByEmail(email);
+    }
 
     private SalonRepository salonRepository;
 
